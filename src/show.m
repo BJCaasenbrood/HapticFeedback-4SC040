@@ -9,7 +9,7 @@ grid on;
 if nargin > 3
 xlabel(varargin{1},'fontsize',12,'interpreter','latex');
 end
-if nargin > 4
+if nargin > 3 && length(varargin) == 2
 ylabel(varargin{2},'fontsize',12,'interpreter','latex');
 end
 end

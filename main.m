@@ -1,16 +1,16 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 clear; close all; clc;
+addpath('src');
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% load default settings
 loadParameters;
-
 %% User settings
-ke = 0;
-Kp = 1.0;
-Kd = 0.1;
+ke = 5e3;
+Kp = 75.0;
+Kd = 0.12;
 %% run model
-OPTION = 2;
+OPTION = 1;
 sim('mainModel');
 plotSignals;
-
-
-%% plot data
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
