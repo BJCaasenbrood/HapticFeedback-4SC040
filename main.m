@@ -1,16 +1,16 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 clear; close all; clc;
-addpath('src');
+addPath;
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% load default settings
 loadParameters;
 %% User settings
-ke = 1e3;       % environmental stiffness
-Kp = 75.0;      % proportional gain
-Kd = 0.12;      % differential gain
+ke = 1e4;       % environmental stiffness
+Kp = 1.0;      % proportional gain
+Kd = 0.5;      % differential gain
 %% run model
 OPTION = 1;     % 1=PP || 2=PF || 3=FF
 sim('mainModel');
 plotSignals;
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+plotOperators(t,thm,ths);
