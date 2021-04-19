@@ -10,7 +10,8 @@ Kp = 1.0;           % proportional gain
 Kd = 0.5;           % differential gain
 %% run model
 OPTION = 1;         % 1=PP || 2=PF || 3=FF
-sim('mainModel');   % edit mainModel.slxc if needed
+sim('mainModel');   % edit mainModel.slx in /src folder 
+                    % if changes to the model are needed
 
 %% plotting
 plotSignals;        % plots time-signals
