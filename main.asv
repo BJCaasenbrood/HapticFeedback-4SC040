@@ -1,6 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 clear; close all; clc;
-addPath;            % load libary from /src folder
+addPath;            % load libary fro /src
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% load default settings
 loadParameters;
@@ -15,15 +15,13 @@ sim('mainModel');   % edit mainModel.slxc if needed
 %% plotting
 plotSignals;        % plots time-signals
 
-% t    - simulation time
-% ths  - angle slave device
-% thm  - angle master device
-% dths - angular velocity slave device
-% dthm - angular velocity master device
-% Fe   - environmental force
-% Fh   - operator(-hand) force
+% t   - simulation time
+% ths - angle slave device
+% thm - angle master device
+% ths - angle slave device
+% thm - angle master device
 
 %% simulation preview
-plotOperators(t,thm,ths);   % plays tele-operator animations
+plotOperators(t,thm,ths);   % play tele-operator animations
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
