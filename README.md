@@ -1,6 +1,6 @@
 # How to install/run the HapticFeedback MATLAB code
 
-1) Download the .zip above unde the option *Code*, or use 'git clone https://github.com/BJCaasenbrood/HapticFeedback-4SC040'
+1) Download the .zip above unde the option *Code*, or use "git clone https://github.com/BJCaasenbrood/HapticFeedback-4SC040"
 2) Unzip the file at a desired location.
 3) run the 'main.m' to run the code.
 4) Change the simulink model 'mainModel.slx' in the /src folder if needed
