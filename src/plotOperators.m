@@ -5,7 +5,7 @@ cla;
 
 M1 = Gmodel('bi_opt_arm_r.stl');
 M1.set('Shading','Face');
-M1.Texture = colorshift(prusa,1.0);
+M1.Texture = diffuse(0.01);
 M1.bake();
 M1.render();
 M2 = Gmodel('bi_opt_base_r.stl');
@@ -21,7 +21,7 @@ M1 = Blender(M1,'Fix');
 
 S1 = Gmodel('bi_opt_arm_r.stl');
 S1.set('Shading','Face');
-S1.Texture = colorshift(prusa,0.15);
+S1.Texture = diffuse(0.15);
 S1.bake();
 S1.render();
 S2 = Gmodel('bi_opt_base_r.stl');
