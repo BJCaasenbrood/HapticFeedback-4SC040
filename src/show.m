@@ -2,7 +2,7 @@ function show(x,y,style,varargin)
 if nargin < 3
  style = '-';
 end
-plot(x,y,style,'linewidth',1);
+plot(x,y,style,'linewidth',2);
 hold on;
 grid on;
 %axis equal;

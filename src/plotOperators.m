@@ -21,7 +21,7 @@ M1 = Blender(M1,'Fix');
 
 S1 = Gmodel('bi_opt_arm_r.stl');
 S1.set('Shading','Face');
-S1.Texture = diffuse(0.15);
+S1.Texture = diffuse(0.125);
 S1.bake();
 S1.render();
 S2 = Gmodel('bi_opt_base_r.stl');
